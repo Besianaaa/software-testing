@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h1>Welcome to my website<h1> <!-- missing closing slash -->
+
+    <div>
+        <p>This is a paragraph
+    </div> <!-- p not closed -->
+
+    <img src="image.jpg"> <!-- missing alt attribute -->
+
+    <a href="https://example.com">Click here</a>
+    <a>Broken link</a> <!-- missing href -->
+
+    <ul>
+        <li>Item 1
+        <li>Item 2
+        <li>Item 3
+    </ul> <!-- missing closing li tags -->
+
+    <button onclick="alert('Hello)">Click me</button> <!-- broken JS string -->
+
+    <form>
+        <input type="text" name="username">
+        <input type="password">
+        <input type="submit">
+    </form> <!-- missing labels -->
+
+    <table>
+        <tr>
+            <td>Row1 Col1
+            <td>Row1 Col2
+        </tr>
+    </table> <!-- missing closing td tags -->
+
+    <div id="main" id="duplicate"> <!-- duplicate id -->
+        <p style="color: red; font-size: 14">Styled text</p> <!-- missing unit -->
+    </div>
+
+    <script>
+        var x = 10
+        if(x = 5) {  // assignment instead of comparison
+            console.log("x is 5")
+        }
+    </script>
+
+</body>
+</html>
